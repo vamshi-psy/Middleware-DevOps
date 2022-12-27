@@ -2,9 +2,9 @@ node {
     
     stage('Deploy') { 
         
-    dir('C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\build') {
+    dir('C:\\artifactstore') {
     
-    deploy adapters: [tomcat8(credentialsId: 'tomcat', path: '', url: 'http://localhost:8090/')], contextPath: null, war: '**/*.war'
+    deploy adapters: [tomcat8(credentialsId: 'tomcat', path: '', url: 'http://localhost:8090/')], contextPath: null, war: '*/*.war'
     
     }
     }
