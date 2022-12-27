@@ -7,6 +7,6 @@ node {
     }
     
     stage('copy to artifactstore'){
-        bat 'copy \\webapp\\target\\webapp.war C:\\artifactstore'
+        bat 'copy webapp\\target\\webapp.war C:\\artifactstore'
     }
  }
