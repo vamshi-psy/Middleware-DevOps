@@ -1,0 +1,8 @@
+node {  
+    stage('clone code') {
+        git 'https://github.com/vamshi-psy/Middleware-DevOps.git'
+    }
+    stage('build') { 
+        bat 'mvn clean install package'
+    }
+ }
