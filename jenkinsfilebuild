@@ -1,6 +1,6 @@
 node {  
     stage('clone code') {
-        git 'https://github.com/vamshi-psy/Middleware-DevOps.git'
+        git 'https://github.com/vamshi-psy/test.git'
     }
     stage('build') { 
         bat 'mvn clean install package'
