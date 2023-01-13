@@ -5,8 +5,4 @@ node {
     stage('build') { 
         sh 'mvn clean install package'
     }
-    
-    stage('copy to artifactstore'){
-        sh 'copy webapp\\target\\webapp.war C:\\artifactstore'
-    }
  }
