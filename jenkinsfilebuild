@@ -3,7 +3,7 @@ node {
         git 'https://github.com/vamshi-psy/test.git'
     }
     stage('build') { 
-        bat 'mvn clean install package'
+        sh 'mvn clean install package'
     }
     
     stage('copy to artifactstore'){
